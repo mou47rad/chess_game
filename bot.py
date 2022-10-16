@@ -10,8 +10,6 @@ import random
 
 
 
-
-
 def get_ruselt(game_id, after_move, new_move, san):
 	data = {'from':after_move,'to':new_move,'san':san,'promotion':'','game_id':game_id,'tte':'0'}
 	login = s.get('https://chess.cool/play/with_computer/game',data=data, timeout=20)
@@ -114,7 +112,4 @@ while True:
 
 
 
-'''
-with io.open('htm.html', 'w', encoding='utf-8') as f:
-	f.write(str(login.text))
-'''
+input('______main______')
